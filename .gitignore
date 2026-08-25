@@ -1,0 +1,36 @@
+# ---- Dependencies ----
+**/node_modules/
+
+# ---- Build output ----
+**/dist/
+**/dist-electron/
+**/dist-obf/
+**/win-unpacked/
+**/build/*.exe
+*.part
+
+# ---- Release binaries: attached to GitHub Releases, not committed ----
+**/releases/*.exe
+
+# ---- Runtime data & Electron sessions (may contain cookies/tokens) ----
+**/user-data/
+**/data/
+**/*.log
+
+# ---- SECRETS — never commit ----
+**/cookies.json
+**/session_state.json
+**/session.json
+**/targets.json
+**/targets.txt
+**/curl.txt
+**/*.cookies
+.env
+**/.env
+
+# ---- OS ----
+Thumbs.db
+.DS_Store
+
+# ---- Licensing vendor tooling (keep private key OFF the repo) ----
+licensing/
